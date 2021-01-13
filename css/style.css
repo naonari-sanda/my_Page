@@ -1,0 +1,568 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: .8px;
+  word-break: break-all;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: #F40004;
+  opacity: .7;
+}
+a:hover {
+  color: #F40004;
+  opacity: 1;
+}
+a img {
+  transition: opacity .3s;
+}
+a img:hover {
+  opacity: .8;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+ul, li {
+  list-style: none；
+}
+h3 {
+	  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+h3:not(:first-child) {
+
+  margin-top: 20px;
+}
+.pc-only {
+  display: block;
+}
+.sp-only {
+  display: none;
+}
+/*--------------------------------
+ 文字
+---------------------------------*/
+.heading-primary {
+  font-family: "impact", "ヒラギノ角ゴシック";
+  font-size: 36px;
+  line-height: 1;
+  display: inline-block;
+  letter-spacing: .2em;
+  text-transform: lowercase;
+  color: #000000;
+}
+.section-heading {
+  text-align: center;
+}
+.section-lead {
+  margin-bottom: 60px;
+  text-align: center;
+}
+/*--------------------------------
+ レイアウト
+---------------------------------*/
+.wrapper {
+  background-color: #fff;
+}
+.section {
+  padding: 120px 0;
+}
+.inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.content {
+  margin-top: 100px;
+}
+/*--------------------------------
+ヘッダー
+---------------------------------*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+.logo {
+  text-align: center;
+}
+.logo-title {
+  font-family: "impact", "ヒラギノ角ゴシック";
+  font-size: 88px;
+  font-weight: normal;
+  line-height: 1;
+  display: block;
+  letter-spacing: inherit;
+  color: #000000;
+}
+.logo-text {
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  letter-spacing: .2em;
+}
+/*--------------------------------
+グローバルナビ
+---------------------------------*/
+.gnav {
+  z-index: 1;
+  font-family: "impact", "ヒラギノ角ゴシック";
+  padding: 10px;
+}
+.gnav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gnav-item {
+  padding: 0 30px;
+}
+.gnav-link {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  text-transform: lowercase;
+  color: #333;
+}
+/* iOS対策 */
+.ios .gnav-link:hover {
+  opacity: 1;
+}
+.gnav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translate3d(0, 0, 0);
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 7px -3px rgba(0, 0, 0, .1);
+  box-shadow: 0 5px 7px -3px rgba(0, 0, 0, .1);
+}
+/*--------------------------------
+ Feature
+---------------------------------*/
+.feature-section .inner {
+  max-width: 1000px;
+}
+.feature-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.feature-image-wrapper {
+  flex: 0 0 48%;
+  margin-right: 40px;
+}
+.text {
+  text-align: left;
+}
+.feature-body {
+  flex: 1;
+}
+.feature-body p:not(:last-child) {
+  /*  margin-bottom: 20px;*/
+}
+/*--------------------------------
+ Works
+---------------------------------*/
+.works-list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: -40px;
+}
+.works-item {
+  flex: 0 0 32.31552%;
+  margin-right: 1.52671%;
+  margin-bottom: 40px;
+}
+.works-item:nth-of-type(3n) {
+  margin-right: 0;
+}
+.works-body {
+  text-align: center;
+}
+.works-link {
+	width: 100%;
+	height: 60%;
+	display: block;
+	overflow: hidden;
+}
+.works-title {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+.works-text {
+  font-size: 10px;
+}
+.works-url {
+  font-size: 10px;
+}
+/*--------------------------------
+ About
+---------------------------------*/
+.about-section .inner {
+  max-width: 1000px;
+}
+.about-section h2 {
+  margin-bottom: 60px;
+}
+.about-body .my-name {
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+.about-body .smalle--name {
+	font-size: 18px;
+}
+.about-body .about-text {
+	padding-top: 30px;
+}
+.about-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about-image-wrapper {
+  flex: 0 0 25%;
+  margin-right: 40px;
+}
+.about-body {
+  flex: 1;
+}
+.about-text p:not(:last-child) {
+  margin-bottom: 20px;
+}
+/*--------------------------------
+ Skill
+---------------------------------*/
+.skill-section .inner {
+  max-width: 1000px;
+}
+.skill-section h2 {
+  margin-bottom: 60px;
+}
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -50px;
+}
+.skill-item {
+  display: flex;
+  flex: 0 0 46%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.skill-image-wrapper {
+  flex: 0 0 60px;
+  margin-right: 20px;
+}
+.skill-body {
+  flex: 1;
+}
+.skill-body p:not(:last-child) {
+  margin-bottom: 20px;
+}
+.skill-title {
+  margin-bottom: 3px;
+}
+.rate {
+  position: relative;
+  font-size: 16px;
+  display: inline-block;
+  width: 100%;
+  height: 20px;
+  letter-spacing: .3em;
+}
+.rate:before, .rate:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 20px;
+  display: inline-block;
+  height: 20px;
+  content: "★★★★★";
+}
+.rate:before {
+  color: #ddd;
+}
+.rate:after {
+  overflow: hidden;
+  white-space: nowrap;
+  color: #F40004;
+}
+.rate1:after {
+  width: 20px;
+}
+.rate2:after {
+  width: 40px;
+}
+.rate3:after {
+  width: 60px;
+}
+.rate4:after {
+  width: 80px;
+}
+.rate5:after {
+  width: 100px;
+}
+/*--------------------------------
+ Footer
+---------------------------------*/
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding-bottom: 30px;
+}
+.footer h2 {
+  color: #fff;
+}
+.footer section {
+  padding-top: 100px;
+  padding-bottom: 0px;
+}
+/*--------------------------------
+ Contact
+---------------------------------*/
+.contact-list {
+	padding-top: 70px;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  list-style-type: none;
+}
+.contact-list a {
+  color: #000000;
+  opacity: 1;
+  display: block;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+.facebook:hover {
+  background-color: royalblue;
+}
+.instgram:hover {
+  background-color: deeppink;
+}
+.twitter:hover {
+  background-color: cornflowerblue;
+}
+.contact-item {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 15px;
+  text-align: center;
+  background-color: #fff;
+  overflow: hidden;
+}
+.contact-name {
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
+  color: #fff;
+}
+.contact-image {
+  width: 50px;
+}
+.contact-text {
+  font-size: 14px;
+  margin-bottom: 20px;
+	margin-top: 20px;
+  text-align: center;
+}
+.copyright {
+  font-size: 10px;
+  text-align: center;
+  color: #fff;
+}
+.page-top {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+}
+.page-top:hover {
+  color: #F40004;
+}
+/*media Queries 767
+----------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .pc-only {
+    display: none;
+  }
+  .sp-only {
+    display: block;
+  }
+  /* 文字 */
+  .heading-primary {
+    font-size: 32px;
+  }
+  /* レイアウト */
+  .section {
+        padding: 50px 0;
+  }
+  .section .inner {
+    padding: 0 15px;
+  }
+  .content {
+    margin-top: 40px;
+  }
+  /* ヘッダー */
+  .header {
+    height: 80vh;
+  }
+  .logo-name {
+    font-size: 16px;
+  }
+  .logo-title {
+    font-size: 40px;
+  }
+  .logo-text {
+    font-size: 10px;
+  }
+  /* グローバルナビ */
+  .gnav-list {
+    padding: 0;
+  }
+  .gnav-link {
+    font-size: 12px;
+  }
+	.gnav-item {
+		padding: 0 10px;
+	}
+  .gnav-link:hover {
+    opacity: 1;
+  }
+  /* Feature */
+  .feature-item {
+    display: block;
+  }
+	.feature-body h3:not(:first-child) {
+		border-top: 1px solid;
+	}
+  .feature-image-wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  /* Works */
+  .works-body {
+    text-align: left;
+  }
+  .works-title {
+    font-size: 10px;
+  }
+  .works-list {
+    justify-content: space-between;
+  }
+  .works-item {
+    flex: 0 0 48%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+	.works-item a {
+		width: 90%;
+		height: 60%;
+	}
+	.works-body {
+		text-align: center;
+	}
+  /* About */
+  .about-item {
+    display: block;
+  }
+  .about-image-wrapper {
+    width: 50%;
+    max-width: 100%;
+    margin: 0 auto 20px;
+  }
+	.about-body {
+		text-align: center;
+	}
+	.profile-text {
+		text-align: left;
+	}
+  /* Skill */
+  .skill-list {
+    display: block;
+    margin-bottom: 0;
+  }
+  .skill-item {
+    max-width: 100%;
+    margin-bottom: 35px;
+  }
+  .skill-item:last-child {
+    margin-bottom: 0;
+  }
+  .skill-image-wrapper {
+/*    flex: 0 0 75px;*/
+    margin-right: 15px;
+  }
+  .rate {
+    font-size: 15px;
+    height: 15px;
+  }
+  .rate:before, .rate:after {
+    line-height: 15px;
+    height: 15px;
+  }
+  .rate1:after {
+    width: 15px;
+  }
+  .rate2:after {
+    width: 35px;
+  }
+  .rate3:after {
+    width: 55px;
+  }
+  .rate4:after {
+    width: 75px;
+  }
+  .rate5:after {
+    width: 95px;
+  }
+  /* Contact */
+  .contact-item {
+    width: 20px;
+	  height: 20px;
+	  margin: 0 10px;
+  }
+	.contact-list {
+		padding-top: 30px;
+	}
+  /* フッター */
+	.footer {
+		padding: 0;
+	}
+	.footer section {
+	padding-top: 30px;
+	}
+  .footer .inner {
+    padding: 20px 0;
+  }
+	.page-top {
+		padding: 0;
+	}
+}
